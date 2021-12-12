@@ -1,13 +1,217 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "iranSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/font/iranSans/IRANSans.ttf');
+}
+
+@font-face {
+  font-family: "iranSansB";
+  font-style: normal;
+  font-weight: bold;
+  src: url('./assets/font/iranSans/IRANSans_Bold.ttf');
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .swiper-slide img {
+  width: 100%;
+  height: 400px;
+  }
+}
+
+.showCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ .productPageTitle {
+    margin-top: 60px;
+    text-shadow: 0px 20px 25px black;
+    color: black;
+    font-size: 50px;
+    font-family: "iranSans";
+    text-align: center;
+  }
+
+  .countSpan {
+    position: relative;
+    text-align: center;
+  }
+
+  .next-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .total-price-div {
+    margin-bottom: 120px;
+    margin-top: 50px;
+    background: lightgrey;
+    border: 2px solid lightgrey;
+    width: 80%;
+    display: block;
+    direction: rtl;
+    border-radius: 8px;
+    font-family: "iranSansB";
+    padding: 5px 10px;
+  }
+
+  .total-price-div p {
+    margin-bottom: 8px;
+  }
+
+  .total-price-div p:last-child {
+    margin-bottom: 0px;
+  }
+
+  .total-price-div span {
+    color: red;
+  }
+
+  @media (min-width: 768px) {
+    .total-price-div {
+    display: flex;
+    justify-content: space-around;
+    padding: 23px 0;
+    font-size: 18px;
+    align-items: center;
+  } 
+}
+
+.address-div {
+  direction: rtl;
+  font-family: "iranSansB";
+  padding: 0 20px;
+}
+
+.address-div label {
+  display: block;
+  margin-top: 20px;
+}
+
+.name-family-div .nameInput {
+  width: 50%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+}
+
+.name-family-div .familyInput {
+  width: 55%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+}
+
+.phone-postcode-div .phoneInput {
+  width: 50%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+}
+
+.phone-postcode-div .postcodeInput {
+  width: 50%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+}
+
+.emailInput {
+  width: 60%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+}
+
+.addressInput {
+  width: 90%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+}
+.address-info-page {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-shadow: 0px 20px 25px black;
+    color: black;
+    font-size: 30px;
+    font-family: "iranSans";
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+  .addressInput {
+  margin-bottom: 150px;
+  width: 60%;
+  }
+
+  .name-family-div .nameInput {
+  width: 20%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+}
+
+.name-family-div .familyInput {
+  width: 25%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+}
+
+.phone-postcode-div .phoneInput {
+  width: 20%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+}
+
+.phone-postcode-div .postcodeInput {
+  width: 20%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+}
+
+.emailInput {
+  width: 40%;
+  border-radius: 4px;
+  padding: 2px;
+  border: 2px solid grey;
+  font-family: "iranSansB";
+  font-size: 14px;
+  }
 }
